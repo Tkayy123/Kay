@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<title>Tra từ điển · Dictionary — Từ Từ</title>
+<meta name="theme-color" content="#9B1C31">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body data-page="dictionary">
+<div class="app">
+<aside class="side" id="side"></aside>
+<main>
+<section id="dictionary" class="panel on">
+<header class="phead">
+<h2>Tra từ điển · Dictionary</h2>
+<p class="mean">Gõ một từ hoặc cụm từ tiếng Việt (không dấu cũng được), tiếng Anh, hoặc một con số (xem cách đọc). Nhấn / để tìm nhanh. Xem nghĩa, thanh điệu, câu ví dụ và luyện phát âm.<br><span class="en2">Type a Vietnamese word or phrase (diacritics optional) or an English word. See meanings, tones, examples, and practise pronunciation.</span></p>
+</header>
+<div class="block">
+<form class="dform" id="df" role="search"><input id="dq" type="search" placeholder="Ví dụ: xin chào, cà phê, house, 1500000…" aria-label="Tra từ" autocomplete="off" autocapitalize="off" spellcheck="false"><button class="btn" type="submit">Tra · Look up</button></form>
+<div class="chips" id="dsug" aria-live="polite"></div>
+<div class="chips" id="dhist"></div>
+<p class="mean" id="dcnt" style="margin:14px 0 0"></p>
+</div>
+<div id="dres"></div>
+<div class="block" id="nbblock">
+<h3 class="bt"><span class="no">★</span><span class="tt">Sổ từ của em<small>My word notebook</small></span></h3>
+<div class="chips" id="nb"></div><p class="mean" id="nbm"></p><div class="act" id="nbact"></div>
+</div>
+<p class="attr">Từ điển cơ bản do nhóm biên soạn. Từ điển mở rộng: dữ liệu <a href="https://en.wiktionary.org/" target="_blank" rel="noopener">Wiktionary</a> (CC BY-SA 4.0) qua <a href="https://kaikki.org/" target="_blank" rel="noopener">Kaikki.org</a> và gói which-dialect-vi, đã lọc và rút gọn; độ thông dụng từ <a href="https://github.com/rspeer/wordfreq" target="_blank" rel="noopener">wordfreq</a> (CC BY-SA 4.0). Dữ liệu trong thư mục <code>dict/</code> giữ nguyên giấy phép <a href="dict/LICENSE.txt">CC BY-SA 4.0</a>. · Extended dictionary data from Wiktionary, CC BY-SA 4.0.</p>
+</section>
+<footer>Tiếng Việt cho người nước ngoài · A0 → A1 · Bấm “Nghe” để nghe giọng đọc tiếng Việt.</footer>
+</main>
+</div>
+<script src="js/core.js"></script>
+<script src="js/data/vocab.js"></script>
+<script src="js/data/examples.js"></script>
+<script src="js/data/dict.js"></script>
+<script src="js/dictload.js"></script>
+<script src="dict/index.js"></script>
+<script src="js/pron.js"></script>
+<script src="js/pages/dictionary.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
