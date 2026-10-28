@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Từ Từ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<title>Thanh điệu · Tones — Từ Từ</title>
+<meta name="theme-color" content="#9B1C31" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181312" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body data-page="tones">
+<div class="app">
+<aside class="side" id="side"></aside>
+<main>
+<section id="tones" class="panel on">
+<header class="phead">
+<h2>Sáu thanh điệu · The six tones</h2>
+<p class="mean">Một âm “ma”, sáu nghĩa. Học từng bước, từ nghe đến phân biệt.<br><span class="en2">One sound “ma”, six meanings. Learn step by step, from listening to telling them apart.</span></p>
+</header>
+<div class="block">
+<h3 class="bt"><span class="no">1</span><span class="tt">Nghe sáu thanh điệu<small>Listen to the six tones</small></span></h3>
+<p class="mean">Chọn một thanh để xem đường cao độ và nghe thử.<br><span class="en2">Pick a tone to see its pitch line and listen.</span></p>
+<div class="tones" id="toneBtns"></div>
+<div class="stage">
+<svg viewBox="0 0 100 100" role="img" aria-label="Đường cao độ của thanh điệu"><line class="grid" x1="0" y1="20" x2="100" y2="20"/><line class="grid" x1="0" y1="50" x2="100" y2="50"/><line class="grid" x1="0" y1="80" x2="100" y2="80"/><path id="curve" class="curve" d=""/></svg>
+<div><div class="word" id="tw"></div><div id="tn" style="font-weight:700;margin-top:6px"></div><div class="mean" id="te"></div><div class="mean" id="td" style="margin-top:6px"></div>
+<div class="act"><button class="btn" id="tl">Nghe · Listen</button></div></div>
+</div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">2</span><span class="tt">Dấu thanh<small>Tone marks</small></span></h3>
+<p class="mean">Thanh ngang không có dấu; năm thanh còn lại có dấu trên hoặc dưới nguyên âm chính. Nhấn để nghe và xem đường cao độ.<br><span class="en2">The level tone has no mark; the other five carry a mark above or below the main vowel. Tap to listen and see the pitch line.</span></p>
+<div class="marks" id="marks"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">3</span><span class="tt">So sánh sáu đường cao độ<small>Compare the six pitch lines</small></span></h3>
+<div class="minis" id="minis"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">4</span><span class="tt">Cặp từ gần giống<small>Near-identical words</small></span></h3>
+<p class="mean">Chỉ khác thanh điệu nhưng nghĩa khác hẳn. Nhấn từng từ để nghe.<br><span class="en2">Only the tone differs, yet the meaning changes completely. Tap each word to listen.</span></p>
+<div id="pairs"></div><p class="mean" id="pm" aria-live="polite"></p>
+<h4 class="sh">Thử nghe · Try listening</h4>
+<p class="mean">Nghe một từ, rồi chạm vào từ em vừa nghe. Sau khi chọn, nghĩa và thanh điệu của cả ba từ sẽ hiện ra.<br><span class="en2">Hear a word, then tap the one you heard. After you answer, the meaning and tone of every word is revealed.</span></p>
+<div class="pqbar"><button class="btn" id="pq">▶ Nghe và chọn · Listen &amp; pick</button><button class="btn alt" id="prp" hidden>🔊 Nghe lại</button><button class="btn alt" id="prs" hidden>🐢 Chậm</button><span class="pscore" id="psc" aria-live="polite"></span></div>
+<div class="popts" id="po"></div><div id="pr" aria-live="polite"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">5</span><span class="tt">Kiểm tra tai nghe<small>Listen and choose</small></span></h3>
+<p class="mean">Nghe một từ “ma”, rồi chọn đúng thanh điệu.<br><span class="en2">Hear one “ma” word, then pick the right tone.</span></p>
+<div class="act" style="margin-top:0"><button class="btn alt" id="qp">Phát một từ · Play a word</button></div>
+<div class="tones" id="qo"></div><div id="qr" aria-live="polite"></div>
+</div>
+</section>
+<footer>Tiếng Việt cho người nước ngoài · A0 → A1 · Bấm “Nghe” để nghe giọng đọc tiếng Việt.</footer>
+</main>
+</div>
+<script src="js/core.js"></script>
+<script src="js/data/vocab.js"></script>
+<script src="js/pron.js"></script>
+<script src="js/pages/tones.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
