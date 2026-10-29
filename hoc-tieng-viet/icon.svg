@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Từ Từ</title><rect width="512" height="512" rx="0" fill="#9B1C31"/><g transform="translate(244 246) scale(.86) translate(-256 -256)"><g transform="translate(0 8)">
-<path d="M96 372H392Q432 372 432 332V282Q432 258 410 258Q388 258 388 282V316H96Q70 316 70 344Q70 372 96 372Z" fill="#FBF6EE"/>
-<circle cx="236" cy="262" r="118" fill="#F2B84B"/>
-<path d="M236 262m0 0a14 14 0 0 1 14 14a28 28 0 0 1 -28 28a44 44 0 0 1 -44 -44a60 60 0 0 1 60 -60a76 76 0 0 1 76 76" fill="none" stroke="#9B1C31" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M404 258L384 196" stroke="#FBF6EE" stroke-width="14" stroke-linecap="round"/>
-<path d="M418 262L452 208" stroke="#FBF6EE" stroke-width="14" stroke-linecap="round"/>
-<circle cx="382" cy="190" r="14" fill="#FBF6EE"/><circle cx="456" cy="202" r="14" fill="#FBF6EE"/>
-</g></g></svg>
