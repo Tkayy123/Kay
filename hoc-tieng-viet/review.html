@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Từ Từ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<title>Ôn tập · Review quiz — Từ Từ</title>
+<meta name="theme-color" content="#9B1C31" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181312" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body data-page="review">
+<div class="app">
+<aside class="side" id="side"></aside>
+<main>
+<section id="review" class="panel on">
+<header class="phead">
+<h2>Ôn tập · Review</h2>
+<p class="mean">Chọn nghĩa đúng của từ. Bật chế độ nghe để luyện nghe không nhìn chữ.<br><span class="en2">Pick the correct meaning. Turn on listen mode to train your ear without seeing the word.</span></p>
+</header>
+<div class="block">
+<h3 class="bt"><span class="no">1</span><span class="tt">Chọn chế độ<small>Choose a mode</small></span></h3>
+<div class="chips" id="rm"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">2</span><span class="tt">Câu hỏi<small>Question</small></span></h3>
+<div class="word" id="rq" style="font-size:56px;min-height:70px"></div>
+<div class="act"><button class="btn alt" id="rh">🔊 Nghe · Listen</button><button class="btn" id="rn">Câu tiếp · Next</button></div>
+<h4 class="sh">Chọn nghĩa đúng · Pick the meaning</h4>
+<div class="tones" id="ro"></div><div id="rr" aria-live="polite" style="margin-top:14px"></div><p class="mean" id="rs"></p>
+</div>
+</section>
+<footer>Tiếng Việt cho người nước ngoài · A0 → A1 · Bấm “Nghe” để nghe giọng đọc tiếng Việt.</footer>
+</main>
+</div>
+<script src="js/core.js"></script>
+<script src="js/data/vocab.js"></script>
+<script src="js/pages/review.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

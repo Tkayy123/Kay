@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Từ Từ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<title>Hội thoại · Dialogues — Từ Từ</title>
+<meta name="theme-color" content="#9B1C31" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181312" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body data-page="dialogues">
+<div class="app">
+<aside class="side" id="side"></aside>
+<main>
+<section id="dialogues" class="panel on">
+<header class="phead">
+<h2>Hội thoại · Dialogues</h2>
+<p class="mean">Chọn bài và chọn vai. Câu của vai em được che đi: hãy nói trước, rồi nhấn để kiểm tra.<br><span class="en2">Pick a dialogue and a role. Your lines are hidden: say them first, then tap to check.</span></p>
+</header>
+<div class="block">
+<h3 class="bt"><span class="no">1</span><span class="tt">Chọn bài hội thoại<small>Pick a dialogue</small></span></h3>
+<div class="chips" id="dl"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">2</span><span class="tt">Chọn vai của em<small>Pick your role</small></span></h3>
+<div class="chips" id="roles"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">3</span><span class="tt">Luyện nói<small>Practice speaking</small></span></h3>
+<div id="lines"></div>
+</div>
+</section>
+<footer>Tiếng Việt cho người nước ngoài · A0 → A1 · Bấm “Nghe” để nghe giọng đọc tiếng Việt.</footer>
+</main>
+</div>
+<script src="js/core.js"></script>
+<script src="js/data/vocab.js"></script>
+<script src="js/pages/dialogues.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

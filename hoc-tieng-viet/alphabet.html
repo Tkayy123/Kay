@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Từ Từ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<title>Bảng chữ cái · Alphabet — Từ Từ</title>
+<meta name="theme-color" content="#9B1C31" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181312" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body data-page="alphabet">
+<div class="app">
+<aside class="side" id="side"></aside>
+<main>
+<section id="alphabet" class="panel on">
+<header class="phead">
+<h2>Bảng chữ cái · The alphabet</h2>
+<p class="mean">Tiếng Việt có 29 chữ cái. Nhấn một chữ để xem tên, cách đọc và từ ví dụ.<br><span class="en2">Vietnamese has 29 letters. Tap a letter for its name, sound and an example word.</span></p>
+</header>
+<div class="block">
+<h3 class="bt"><span class="no">1</span><span class="tt">Chọn một chữ cái<small>Pick a letter</small></span></h3>
+<div class="abc" id="abc"></div>
+</div>
+<div class="block">
+<h3 class="bt"><span class="no">2</span><span class="tt">Nghe và học<small>Listen and learn</small></span></h3>
+<div class="stage"><div style="text-align:center"><div class="word" id="al" style="font-size:96px"></div><div class="mean" id="at"></div></div>
+<div><div class="mean">Tên chữ cái · Letter name</div><div id="an" style="font:700 28px var(--font)"></div><div class="mean" style="margin-top:8px">Cách đọc · Sound</div><div id="as"></div><div class="mean" style="margin-top:8px">Ví dụ · Example</div><div><b id="aw" style="font-size:24px"></b> · <span id="am"></span></div>
+<div class="act"><button class="btn" id="ahl">Nghe tên chữ · Hear the name</button><button class="btn alt" id="ahw">Nghe ví dụ · Hear an example</button><button class="btn alt" id="aprev">Trước · Previous</button><button class="btn alt" id="anext">Tiếp · Next</button></div></div></div>
+</div>
+</section>
+<footer>Tiếng Việt cho người nước ngoài · A0 → A1 · Bấm “Nghe” để nghe giọng đọc tiếng Việt.</footer>
+</main>
+</div>
+<script src="js/core.js"></script>
+<script src="js/data/vocab.js"></script>
+<script src="js/pages/alphabet.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
